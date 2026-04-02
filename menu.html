@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/menu.css">
+  <title>RESTAURANT AFRICANA/MENU PAGE</title>
+</head>
+<body>
+
+<nav class="navbar">
+
+  <!-- Toggle Button (LEFT) -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- Search Bar (CENTER) -->
+ <!-- <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="searchPage()">Search</button>
+  </div>
+  -->
+
+  <!-- Logo (RIGHT) -->
+  <div class="logo">
+    <img src="images/logo.png" alt="Logo">
+  </div>
+
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About</a>
+  <a href="index.html#footer">Contact</a>
+</div>
+
+<div class="welcome-container">
+  <h1>
+  welcome to restaunt africana
+  </h1>
+
+  <p>
+  where rich African flavors meet unforgettable experiences. 
+  Sit back, relax, and enjoy the taste of home. flavors comes 
+  alive
+  </p>
+
+ </div>
+<!--menu welcom container-->
+
+
+
+<!-- MENU CATEGORIES -->
+<div class="menu-categories">
+  <button id="beverages-" class="category active" data-category="beverages">Beverages</button>
+  <button id="light-meal" class="category" data-category="light">Light Meal</button>
+  <button id="african-" class="category" data-category="african">African Cuisine</button>
+  <button id="pizza-" class="category" data-category="pizza">Pizza Africana</button>
+  <button id="sandwich-" class="category" data-category="sandwich">Sandwiches</button>
+  <button id="fish-" class="category" data-category="fish">Fish</button>
+  <button id="meat-" class="category" data-category="meat">Meat</button>
+  <button id="pasta-"  class="category" data-category="pasta">Pasta</button>
+</div>
+
+<!-- MENU ITEMS -->
+<div class="menu-content">
+
+    <div class="menu-section active" id="light">
+      <h2>Light Meal</h2>
+    
+      <div class="food-grid">
+    
+        <div class="food-card">
+          <div class="food-info">
+            <h3>Tasty Meatballs & Chips</h3>
+            <p>Small</p>
+            <span class="price">MK 9,500.00</span>
+            <p>Large</p>
+            <span class="price">MK 15,000.00</span>
+          </div>
+        </div>
+    
+        <div class="food-card">
+          <div class="food-info" id="chicken-&-chips">
+            <h3>Chicken pieces & Chips</h3>
+            <p>small</p>
+            <span class="price">MK 9,000.00</span>
+            <p>Large</p>
+            <span class="price">MK 15,000.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-grid">
+
+        <div class="food-card">
+          <div class="food-info">
+            <h3>Chicken pieces with Nsima or Rice</h3>
+            <p>small</p>
+            <span class="price">MK 16,000.00</span>
+          </div>
+        </div>
+
+        <div class="food-card">
+          <div class="food-info">
+            <h3>Sausage & Chips</h3>
+            <p>small</p>
+            <span class="price">MK 12,000.00</span>
+            <p>Medium</p>
+            <span class="price">MK 16,000.00</span>
+            <p>Large</p>
+            <span class="price">MK 19,000.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-grid">
+        <div class="food-card">
+          <div class="food-info">
+            <h3>Quarter Chicken</h3>
+            <p>Grilled Quarter chicken served with your
+              choice of French fries, Rice or Nsima</p>
+            <span class="price">MK 17,000.00</span>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+  <div class="menu-section" id="african">
+
+    <h2>African Cuisine</h2>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Mozambican Chicken</h3>
+          <p>Marinated Half Chicken in garlic and
+            lemon juice with a hint of peri-peri spice</p>
+          <span class="price">MK 35,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> African Chicken</h3>
+          <p>Half boiled, half fried, cooked with
+            garlic, soy sauce and a tinkle of
+            honey served with rice or nsima.</p>
+          <span class="price">MK 27,000.00</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Beef Burger Africana</h3>
+          <p>Beef patty served in bun topped with a
+            fried egg</p>
+          <span class="price">MK 16,500.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section" id="pizza">
+    <h2>Pizza Africana</h2>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <p>
+            Chicken & Mushroom topped with MozzarellaCheese
+          </p>
+          <span class="price">MK 30,000.00</span>
+        </div>
+      </div>
+      <div class="food-card">
+        <div class="food-info">
+          <p>
+            Beef, Mushroom and Pineapple topped with Mozzarella Cheese
+          </p>
+          <span class="price">MK 30,000.00</span>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-info">
+          <p>
+            Meat lovers, toppled with Beef, Chicken, Beef Sausage, Green Pepper with Mozzarella Cheese
+          </p>
+          <span class="price">MK 30,000.00</span>
+        </div>
+      </div>
+
+      </div>
+  </div>
+
+  <div class="menu-section" id="sandwich">
+    <h2>Sandwiches</h2>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Club Sandwich</h3>
+          <p>Three tiered sandwich alternated with chicken
+            mayonnaise, beef and fried egg.</p>
+          <span class="price">MK 15,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> Sandwich Board</h3>
+          <p>Your Choice of tomato, cheese, chicken or beef
+            sandwich served plain or toasted</p>
+          <span class="price">MK 13,000.00</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <div class="food-info">
+          <h3>African Wrap</h3>
+          <p>Your choice of sautéed beef or chicken strips
+            served wrapped in Africana’s own wheat wrap</p>
+          <span class="price">MK 25,000.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section" id="fish">
+    <h2>Fish</h2>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Crumbed fillet of Chambo Carice</h3>
+          <p>Served topped with crumbed and
+            fried banana</p>
+          <span class="price">MK 30,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info" id="nsomba">
+          <h3> Nsomba yophika</h3>
+          <p>Your choice of fresh or dried fish
+            simmered in fish stock</p>
+          <span class="price">MK 30,000.00</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+
+        <div class="food-info">
+          <h3>Crumbed Fillet of Chambo Caprice</h3>
+          <p>Lake Malawi Chambo served whole
+            or split open fried in butter then
+            baked in the oven</p>
+          <span class="price">MK 30,000.00</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="menu-section" id="meat">
+    <h2>Meats</h2>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Grilled T.Bone steak with mushroom soup</h3>
+          <p>Half pounder man-sized loin
+            steak served with your choice of
+            mushroom sauce or brown sauce</p>
+          <span class="price">MK 30,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> Mixed Grill</h3>
+          <p>A combination of grilled steak,
+            lamb chop, ox kidney, ox liver and
+            beef sausage topped with a fried
+            egg</p>
+          <span class="price">MK 30,000.00</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info" id="mbuzi">
+          <h3>Traditional Beef Stew</h3>
+          <p>Malawi prime beef simmered in
+            a rich brown sauce</p>
+          <span class="price">MK 25,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> Mbuzi Kalipenta</h3>
+          <p>Traditional goat stew served in
+            an individual casserole</p>
+          <span class="price">MK 25,000.00</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Nkhuku Yophika</h3>
+          <p>Road runner chicken cooked in
+            Mother's home cooking style</p>
+          <span class="price">MK 26,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> Chicken or Beef Khwasu Khwasu</h3>
+          <p>Spiced Chicken with homemade
+            Mango Achaar</p>
+          <span class="price">MK 27,000.00</span>
+
+        </div>
+      </div>
+    </div>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Nyama Yozonga</h3>
+          <p>Served with Nsima, rice or potatoes and
+            tomato relish</p>
+          <span class="price">MK 25,000.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section" id="pasta">
+    <h2>Pasta</h2>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Bolognise</h3>
+          <p>Your choice of spaghetti, Linguine or Penne
+            served topped with a meat sauce and gratinated</p>
+          <span class="price">MK 25,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info" id="vege-pasta">
+          <h3> Vegeterian Pasta</h3>
+          <p>Your choice of spaghetti, Linguine or Penne served
+            topped with a Vegetable sauce and gratinated</p>
+          <span class="price">MK 25,000.00</span>
+
+        </div>
+      </div>
+    </div>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Late Riser</h3>
+          <p>Fried eggs, sausage, beef pate, grilled tomato,
+            baked beans and sauté potatoes</p>
+          <span class="price">MK 25,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> spaghetti & Meatballs</h3>
+          <p>A pasta served in tomato sauce with meatballs</p>
+          <span class="price">MK 25,000.00</span>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="menu-section" id="beverages">
+    <h2>Beverages</h2>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Pot of Tea</h3>
+          <span class="price">MK 4,500.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> Ginger Tea</h3>
+          <span class="price">MK 8,500.00</span>
+
+        </div>
+      </div>
+    </div>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Pot of Coffee</h3>
+          <span class="price">MK 6,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> Creame Coffee</h3>
+          <span class="price">MK 8,000.00</span>
+
+        </div>
+      </div>
+    </div>
+    <div class="food-grid">
+    
+      <div class="food-card">
+        <div class="food-info">
+          <h3>Cappuccino</h3>
+          <span class="price">MK 7,000.00</span>
+        </div>
+      </div>
+  
+      <div class="food-card">
+        <div class="food-info">
+          <h3> Hot Chocolate</h3>
+          <span class="price">MK 8,000.00</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="download-buttons">
+
+    <a href="AFRICANA NEW MENU december 2025-2.pdf" download="RESTAURANT AFRICANA MENU">
+      <button>Download Menu</button>
+    </a>
+
+    <a href="https://wa.me/265880901949">
+      <Button>
+        reservation
+      </Button>
+    </a>
+
+  </div>
+
+
+  
+  <footer id="footer">
+    <div class="footer-content">    
+    <div class="footer-container">
+      <h4>
+        Restautant africana
+      </h4>
+      <p>At Restaurant Africana, we celebrate the rich flavors, culture, and traditions of Africa through every dish we serve. Our passion is rooted in bringing people together over authentic meals that reflect the warmth and diversity of the continent.</p>
+    </div>
+    <div class="footer-container">
+      <h4>
+        Contact
+      </h4>
+      <p> +265 880 901 949</p>
+    </div>
+    <div class="footer-container">
+      <h4>
+        Location
+      </h4>
+      <p>Chichiri Shopping Mall, Blantyre</p>
+    </div>
+    </div>
+    <!--line div-->
+    <div class="line"></div>
+    
+    <p class="footer-text">
+      Restaurant Africana. Copyright &copy;2026, all rights Reserved
+    </p>
+    
+    </footer>
+    
+<script>
+ // Toggle Mobile Menu
+ function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+
+  const buttons = document.querySelectorAll(".category");
+const sections = document.querySelectorAll(".menu-section");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    // remove active from all buttons
+    buttons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    // hide all sections
+    sections.forEach(section => section.classList.remove("active"));
+
+    // show selected section
+    const target = button.getAttribute("data-category");
+    document.getElementById(target).classList.add("active");
+
+  });
+});
+</script>
+
+
+</body>
+</html>
